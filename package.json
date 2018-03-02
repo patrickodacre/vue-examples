@@ -1,0 +1,34 @@
+{
+  "name": "Vue-Simple",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "chess.js": "^0.10.2",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.3.1",
+    "jquery-plugin": "0.0.0-ignored",
+    "jsdom": "^11.6.2",
+    "location": "0.0.1",
+    "navigator": "^1.0.1",
+    "vue": "^2.5.13",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.2",
+    "@vue/cli-service": "^3.0.0-beta.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
