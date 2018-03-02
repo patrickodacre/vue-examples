@@ -6,12 +6,11 @@
   </div>
 </template>
 <script>
-require('../assets/chessboard/js/chessboard-0.3.0')
 require('../assets/chessboard/css/chessboard-0.3.0.css')
-import $ from 'jquery'
-window.jQuery = $
-window.$ = $
+require('../assets/chessboard/js/chessboard-0.3.0')
 import Chess from 'chess.js'
+import $ from 'jquery'
+window.$ = $
 
 export default {
     mounted() {
@@ -68,20 +67,12 @@ export default {
             onDragStart: onDragStart,
             onDrop: onDrop,
             onSnapEnd: onSnapEnd,
-            pieceTheme: function(piece) {
-                if (piece.search(/w/) !== -1) {
-                    return require('../assets/chessboard/img/chesspieces/wikipedia/' +
-                        piece +
-                        '.png')
-                }
-
-                // alpha theme for black pieces
-                return require('../assets/chessboard/img/chesspieces/wikipedia/' +
+            pieceTheme: piece =>
+                require('../assets/chessboard/img/chesspieces/wikipedia/' +
                     piece +
                     '.png')
-            }
         }
-        board = window.ChessBoard('board', cfg)
+        board = ChessBoard('board', cfg)
     }
 }
 </script>
