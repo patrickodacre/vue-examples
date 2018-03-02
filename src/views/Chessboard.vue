@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="chessboard">
+    <h1>Chessboard</h1>
 
     <div id="board" style="width: 400px"></div>
   </div>
